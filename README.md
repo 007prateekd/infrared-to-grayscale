@@ -25,6 +25,6 @@ For complete information refer [this](Report.pdf) project report.
 ## Conclusion
 
 The results can be seen below. The images are Grayscale, Infrared and Predicted Grayscale image (from left to right)   
-<img src='Images/Gray.png' width=200>
-<img src='Images/Thermal.png' width=200>
-<img src='Images/Recon.png' width=200>
+<img src='Images/Gray.png' width=250>
+<img src='Images/Thermal.png' width=250>
+<img src='Images/Recon.png' width=250>
