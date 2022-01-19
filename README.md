@@ -15,16 +15,19 @@ little information (infrared) into a high-dimensional feature space (visible ran
 ## How
 
 In brief we did the following:
-- Created a new tablular dataset from the initial imges dataset by preserving local dependencies.
-- Experimented with different ANN architectures and chose the one which gave the least mean squared error.
-- Applied postprocessing image processing techniques like Gaussian blurring and Laplacian high pass filtering to enchance the predicted images.    
+- [Data-Gen.ipynb](Data-Gen.ipynb) extracts data from all the zip files. Then, all the colored images are converted into 
+grayscale while also storing the (thermal, grayscale) image pairs in a dataframe. Finally the dataframe is stored in the memory for further usage.
+- In [Base.ipynb](Base.ipynb), we:
+  - Created a new tablular dataset from the initial imges dataset by preserving local dependencies.
+  - Experimented with different ANN architectures and chose the one which gave the least mean squared error.
+  - Applied postprocessing image processing techniques like Gaussian blurring and Laplacian high pass filtering to enchance the predicted images.    
 
 
 For complete information refer [this](Report.pdf) project report.
 
 ## Conclusion
 
-The results can be seen below. The images are Grayscale, Infrared and Predicted Grayscale image (from left to right)   
+The results can be seen below. From left to right, the images are Grayscale, Infrared and Predicted Grayscale image:   
 <img src='Images/Gray.png' width=250>
 <img src='Images/Thermal.png' width=250>
 <img src='Images/Recon.png' width=250>
